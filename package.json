@@ -17,6 +17,9 @@
   },
   "homepage": "https://gitlab.com/prateekmadhesia/prateek-http-drill#readme",
   "dependencies": {
-    "http": "0.0.1-security"
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "path": "^0.12.7"
   }
 }
