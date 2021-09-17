@@ -11,10 +11,10 @@ app.use("/uuid", require(path.join(__dirname, "routes/uuid.js")));
 app.use("/status", require(path.join(__dirname, "routes/status.js")));
 app.use("/delay", require(path.join(__dirname, "routes/delay.js")));
 
-app.get('*', (req, res)=>{
+app.all("*", (req, res) => {
   res.status(404);
-  res.send('<h1>404 Not Found</h1>');
-})
+  res.send("<h1>404 Not Found</h1>");
+});
 
 app.listen(port, () => {
   console.log(`Listening to port ${port}`);
