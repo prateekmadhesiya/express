@@ -16,6 +16,6 @@ app.all("*", (req, res) => {
   res.send("<h1>404 Not Found</h1>");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening to port ${port}`);
 });
